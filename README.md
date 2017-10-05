@@ -1,5 +1,10 @@
 # MNM_install_linux_on_windows
 
+
+##  My Newbie Manual: Install linux-mint side by side with windows using a manual paritioning of the disks
+
+
+
 In this guide I write the Mint installation on Windows PC step by step.
 The strategy used in this guide could not be the clever one, but it worded for me.
 
