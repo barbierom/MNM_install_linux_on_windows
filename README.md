@@ -7,6 +7,7 @@
 
 In this guide I write the Mint installation on Windows PC step by step.
 The strategy used in this guide could not be the clever one, but it worded for me.
+THe main philosophy is to manually mount the operatign system Mint (/) is a different point of the data directory (/home).
 
 First, we have to install in two different USB keys  gparted-live and Linux-Mint operating system.
 Gparted-live is needed in order to properly manage the disk space in the Windows PC.
@@ -131,6 +132,19 @@ Install now and go on and in the end reboot the `PC` unplingging the `USBM`
 
 
 If everything is ok, Grub will let you decide witch operating system you can play.
+
+## Dual boot with windwos
+Recently, I installed the Mint on my laptop.
+The installation was not straightfoward because of the presence of SSD disk with change.
+Before running the live installation from USB, we manage to change some option of the UEFI like:
+* In advance boot optiom activate the legacy mode,  and in the secure boot enable the secure boot.
+Also change the SATA dick setting from RAID on to AHCI
+* proceed with the linux installation
+* check is the linux is running correctly,
+* the windwos maybe is not albe to boot anymore even if is correctly setting from the grub. 
+As far as I know, this is probably due to the fact that the AHCI driver is not setting on windows. 
+In order to fix this proble I followd the [link](https://askubuntu.com/questions/963087/install-dual-boot-ubuntu-with-windows-10-and-raid-on), in particular the answer 1 choice 2.
+
 
 
 In this guide I write the Mint installation on Windows PC step by step.
